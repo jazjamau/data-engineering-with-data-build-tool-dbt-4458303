@@ -3,3 +3,158 @@ node_modules
 .tmp
 npm-debug.log
 *logs/
+
+
+# ------------------------------
+# OS-SPECIFIC FILES
+# ------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# WSL
+*.swp
+*.swo
+.cache/
+.wslconfig
+
+# ------------------------------
+# PYTHON / VIRTUAL ENVIRONMENTS
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.eggs/
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# dbt virtual environment (if using Python-based dbt)
+dbt_venv/
+
+# ------------------------------
+# NODE / JS (for dbt-utils, UI, etc.)
+# ------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------
+# DOCKER
+# ------------------------------
+# Ignore local build files
+.docker/
+.dockerignore
+docker-compose.override.yml
+# Optional: keep main Dockerfile(s)
+!Dockerfile
+!docker-compose.yml
+
+# Local volumes
+volumes/
+tmp/
+logs/
+*.log
+
+# ------------------------------
+# DBT (Data Build Tool)
+# ------------------------------
+target/
+dbt_modules/
+logs/
+dbt_packages/
+manifest.json
+run_results.json
+profiles.yml
+# If profiles.yml is not stored securely elsewhere
+.env
+.env.*
+
+# ------------------------------
+# SNOWFLAKE / CREDENTIALS
+# ------------------------------
+# Snowflake credentials or temporary files
+*.snowflake
+*.snowsql
+*.snowsql_config
+*.p12
+*.pem
+*.key
+*.crt
+
+# ------------------------------
+# VISUAL STUDIO CODE
+# ------------------------------
+.vscode/
+.history/
+*.code-workspace
+
+# ------------------------------
+# AZURE DEVOPS / PIPELINES
+# ------------------------------
+# Ignore local pipeline configs
+.local-pipeline/
+.azure-pipelines-env/
+# Artifacts
+*.coverage
+*.testresults.xml
+*.trx
+*.coveragexml
+# Azure cache or task temp files
+.azuredevops/
+*.taskkey
+
+# ------------------------------
+# ENVIRONMENT / SECRETS
+# ------------------------------
+.env
+.env.local
+.env.*.local
+*.secrets
+secrets.json
+config.json
+# Temporary key/cert files
+*.crt
+*.key
+*.pem
+
+# ------------------------------
+# OTHER COMMON PROJECT FILES
+# ------------------------------
+.idea/
+*.iml
+*.bak
+*.tmp
+*.temp
+*.lock
+__MACOSX/
+*.zip
+*.tar
+*.gz
+*.rar
+
+# ------------------------------
+# CUSTOM / PROJECT-SPECIFIC
+# ------------------------------
+# Ignore compiled artifacts or exports
+build/
+dist/
+out/
+exports/
+data/
+.cache/
+__dbt_artifacts__/
